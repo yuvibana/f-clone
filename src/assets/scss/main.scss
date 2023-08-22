@@ -1,0 +1,162 @@
+@import url(../css/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+.addFontQuicksand{font-family: 'Quicksand', sans-serif;}
+
+:root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    --black: #04152d;
+    --black2: #041226;
+    --black3: #020c1b;
+    --black-lighter: #1c4b91;
+    --black-light: #173d77;
+    --pink: #da2f68;
+    --orange: #f89e00;
+    --white:#fff;
+    --gradient: linear-gradient(98.37deg, #f89e00 0.99%, #da2f68 100%);
+    --transition: all 0.4s ease-in-out;
+    --box-shadow:0 10px 55px 5px rgba(35, 35, 35, 0.2);
+}
+
+
+/*body {
+    background-color: var(--black);
+    color: var(--white);
+}*/
+
+
+/*flexbox*/
+.dflex{display: flex;}
+.flexwrap{flex-wrap: wrap;}
+.fdirectioncol{flex-direction: column;}
+.itemsCenter{align-items: center;}
+.itemsStart{align-items: flex-start;}
+.contentBetween{justify-content: space-between;}
+.contentCenter{justify-content: center;}
+
+
+/* font sizes */
+.font15{font-size: 15px;}
+.font16{font-size: 16px;}
+.font17{font-size: 17px;}
+.font18{font-size: 18px;}
+.font20{font-size: 20px;}   
+.font21{font-size: 21px;}
+.font22{font-size: 22px;}
+.font23{font-size: 23px;}
+.font24{font-size: 24px;}
+.font25{font-size: 25px;}
+.font30{font-size: 30px;}
+.font35{font-size: 35px;}
+
+/* font weights */
+.fw500{font-weight: 500;}
+.fw600{font-weight: 600;}
+.fw700{font-weight: 700;}
+.fw800{font-weight: 800;}
+.fw900{font-weight: 900;}
+
+/* colors */
+.textblack{color: #282c34;}
+.textwhite{color: #fff;}
+.textgray{color: #6b6b6b;}
+.textblue{color: #61dafb;}
+
+/*text transform*/
+.textCapitalize{text-transform: capitalize;}
+.textUppercase{text-transform: uppercase;}
+.textcenter{text-align: center;}
+
+/* border */
+.border{border:1px solid #ddd;}
+
+/*rounded*/
+.rounded-5{border-radius: 5px;}
+.rounded-8{border-radius: 8px;}
+.rounded-10{border-radius: 10px;}
+.rounded-12{border-radius: 12px;}
+.rounded-15{border-radius: 15px;}
+.rounded-50{border-radius: 50px;}
+.rounded-100{border-radius: 100px;}
+
+/* them color */
+.darktheme {background-color: #282c34;color: white;}
+.lihghttheme{background: #fff; color: #282c34;}
+.lihghttheme .textblack{color: #fff;}
+.lihghttheme .textwhite{color: #282c34;}
+
+
+/* btn */ 
+.btn{padding: 8px 25px; background: var(--pink); color: var(--white); display: inline-block;
+    &:hover{background-color: #8a133b; transition: var(--transition);}
+}
+
+
+/* spaces*/ 
+.mx{margin: 0 10px;}
+.my{margin: 10px 0;}
+.px{padding: 0 10px;}
+.py{padding: 10px 0;}
+
+
+/* width*/ 
+.w100{width: 100%;}
+.w75{width: 75%;}
+.w50{width: 50%;}
+.w25{width: 25%;}
+
+/* display block*/
+.dblock{display: block;}
+.dinlineblock{display: inline-block;}
+
+
+.ellipsistext{ white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+
+// ** == == ** css start ** == == ** //
+
+.notFound{height: 90vh;
+    .text{padding: 5px 0 8px 0;}
+}
+
+// .conatainer
+.conatainer{max-width: 80vw; margin: 0 auto;}
+
+/*.appHeader*/
+.appHeader{background: var(--black2); padding: 10px 0;
+    a{color: var(--white);}
+}
+/*.footer*/
+.footer{background: var(--black2); color: var(--white); padding: 15px 0;}
+
+.bag-quantity{height: 25px; width: 25px; background: var(--orange); text-align: center; line-height: 25px; position: relative; left: -15px;}
+
+
+// .gridDiv
+.gridDiv{display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px 25px;}
+.pruductsmain{margin: 50px auto;
+    .heading{color: var(--black2); margin-bottom: 15px;}
+}
+.productcards{padding: 10px;
+    &:hover{box-shadow: var(--box-shadow); transition: var(--transition);}    
+}
+.productsAvtar{
+    img{ height: 194px; min-height: 200px; max-width: 100%;}
+}
+.rating{padding: 5px 8px; background-color: green; color: var(--white); border-radius: 5px;}
+
+/*.cartCainatiner */
+
+.cartCainatiner{margin: 50px auto;
+    .heading{margin-bottom: 20px;}
+    table{width: 100%;}
+    td,th{padding: 8px; border: 1px solid #ddd; vertical-align: middle;}
+    .ItemsMain{ gap: 0 25px;
+        img{width: 100px;}
+    }
+    .clearCart{padding: 4px 10px;}
+}
