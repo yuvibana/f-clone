@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+// import SearchBar from './SearchBar';
 
 export default function NavBar() {
     // let cartTotalQuantity = useSelector(state => state.cart.cartTotalQuntity);
 
     return (<header className="appHeader">
         <nav className="nav-bar conatainer dflex contentBetween itemsCenter">
-            <Link to="/" className="logo font25 textCapitalize addFontQuicksand fw600">yuviShop</Link>
+            <Link to="/" className="logo font25 textCapitalize addFontQuicksand fw600">asyncjsdevShop</Link>
+            {/* <SearchBar /> */}
             <Link to='/Cart' className="bagLinker">
                 <div className="navbag dflex contentBetween itemsCenter">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" className="bi bi-cart" viewBox="0 0 16 16">

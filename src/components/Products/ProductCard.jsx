@@ -1,11 +1,13 @@
-import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
-export default function ProductCard({ productsData }) {
-
+export default function ProductCard({ productsData, loadingStatus }) {
     return (
         <>
-            <div className="font25 fw600 heading">New Arrival </div>
+            {
+                loadingStatus ? (<div className="font25 fw600 heading"> No Product found </div>
+                ) : (<div className="font25 fw600 heading">New Arrival </div>)
+            }
             <div className="productsDiv textcenter gridDiv">
                 {productsData?.map((product, index) =>
                     <div

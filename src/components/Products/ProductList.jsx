@@ -6,19 +6,23 @@ import ProductCard from './ProductCard';
 export default function ProductList() {
   const dispatch = useDispatch();
 
-  const { items, error } = useSelector(state => state.products)
-
-
+  const { items, loading } = useSelector(state => state.products)
+ 
   useEffect(() => {
     dispatch(FetchProducts())
   }, [])
 
+  if (items.length <= 0) {
+    return <h1 className="font35 fw600 heading textcenter my">Product not found</h1>;
+  }
 
   return (
     <div className="conatainer pruductsmain">
-      {error ? (<p>An Error Occured</p>
+      {loading ? (<p>An Error Occured</p>
       ) : (
-        <ProductCard productsData={items} />
+        <ProductCard
+          productsData={items}
+          loadingStatus={loading} />
       )}
     </div>
   )

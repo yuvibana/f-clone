@@ -94,6 +94,12 @@
 .btn{padding: 8px 25px; background: var(--pink); color: var(--white); display: inline-block;
     &:hover{background-color: #8a133b; transition: var(--transition);}
 }
+.disabled{background-color:#909090;
+    &:hover{background-color: #909090;}
+}
+.btn_sm{padding: 2px 5px; border-radius: 5px;}
+.bggreen{background-color: green; color: var(--white);}
+.bgred{background-color: rgb(195, 59, 59);color: var(--white);}
 
 
 /* spaces*/ 
@@ -101,7 +107,7 @@
 .my{margin: 10px 0;}
 .px{padding: 0 10px;}
 .py{padding: 10px 0;}
-
+.gap10{gap:0 10px;}
 
 /* width*/ 
 .w100{width: 100%;}
@@ -130,6 +136,11 @@
 .appHeader{background: var(--black2); padding: 10px 0;
     a{color: var(--white);}
 }
+
+.headersearchbox{background: var(--white); width: 50%;
+    .btn{width: 15%;}
+    input{padding: 10px; width: 85%; border-radius: 5px 0 0 5px;}
+}
 /*.footer*/
 .footer{background: var(--black2); color: var(--white); padding: 15px 0;}
 
@@ -144,6 +155,7 @@
 .productcards{padding: 10px;
     &:hover{box-shadow: var(--box-shadow); transition: var(--transition);}    
 }
+
 .productsAvtar{
     img{ height: 194px; min-height: 200px; max-width: 100%;}
 }
@@ -159,4 +171,16 @@
         img{width: 100px;}
     }
     .clearCart{padding: 4px 10px;}
+}
+
+.detaildivmain { margin: 50px auto;
+    .slider{width: 49%;
+        img{height: 450px; width: 100%; object-fit: cover;}
+    }
+    .cardDetailContent{width: 49%;}
+    .swiper-button-prev, .swiper-button-next{background-color: var(--orange); padding: 10px 5px; border-radius: 0 5px 5px 0; left: 0;
+        &::after{color: var(--white);}
+    }
+    .swiper-button-next{left: inherit; right: 0; border-radius: 5px 0 0 5px;}
+    .swiper-pagination-bullet{padding: 8px; background-color: var(--black);}
 }
